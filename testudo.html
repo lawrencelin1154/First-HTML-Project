@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Testudo Web Services</title>
+  <link rel="stylesheet" href="testudoStyle.css">
+  <style>
+    .rectangle {
+      background-color: #E03A3E;
+      color: white; 
+      padding: 16px;
+      font-size: 50px;
+      border: none;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .dropdown {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <header class="rectangle">Testudo</header>
+  
+  <nav class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Web Resources</button>
+      <div class="dropdown-content">
+        <a href="https://app.testudo.umd.edu/#/main/regAppt?null">Appointments and Registration</a>
+        <a href="https://app.testudo.umd.edu/#/main/schedule?null&termId=202305">Student Schedule</a>
+        <a href="https://app.testudo.umd.edu/#/main/uotrans?null">Unofficial Transcripts</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Campus Services</button>
+      <div class="dropdown-content">
+        <a href="http://www.umd.edu/bursar/">Billing</a>
+        <a href="http://map.umd.edu/map/">Campus Map</a>
+        <a href="http://dining.umd.edu/">Dining Services</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Student Services</button>
+      <div class="dropdown-content">
+        <a href="https://financialaid.umd.edu/">Financial Aid</a>
+        <a href="https://www.tutoring.umd.edu/">Tutoring Services</a>
+        <a href="https://reslife.umd.edu/">Resident Life</a>
+      </div>
+    </div>
+  </nav>
+
+  <img src="UMD.jpg" alt="UMD Campus">
+</body>
+</html>
